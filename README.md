@@ -19,7 +19,7 @@ Acesse o diretório
 
 Instale o plugin
 
-    vagrant install vagrant-hostsupdater
+    vagrant plugin install vagrant-hostsupdater
 
 Inicie a box
 
