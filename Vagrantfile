@@ -14,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       config.hostsupdater.aliases = ["ushahidi.dev","one.dev"]
     end
 
-    config.vm.provision "shell", path: "install.sh"
+    #config.vm.provision "shell", path: "install.sh"
 
 		config.vm.provider "virtualbox" do |virtualbox|
 			virtualbox.customize [ "modifyvm", :id, "--cpus", "1" ]

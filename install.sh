@@ -1,5 +1,5 @@
 aptitude update
-#aptitude install puppet -y
+aptitude install git -y
 puppet module install puppetlabs/mysql
 puppet module install puppetlabs/apache
 puppet module install puppetlabs/vcsrepo
@@ -9,4 +9,4 @@ cd /etc/puppetlabs/code/environments/production/modules/
 git clone https://github.com/gutocarvalho/puppet-ushahidi ushahidi
 puppet apply -e "include ushahidi::platform"
 cd /srv/ushahidi
-bin/update
+/srv/ushahidi/bin/update
